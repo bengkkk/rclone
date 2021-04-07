@@ -9,4 +9,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: copy gd:backend/整合/Other/jap e3:back/整合/Other/jap
+        args: copy -vv --stats 10s --ignore-existing gd:backend/整合/Other/jap e3:back/整合/Other/jap
